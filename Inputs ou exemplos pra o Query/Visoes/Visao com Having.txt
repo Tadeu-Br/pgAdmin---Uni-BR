@@ -1,0 +1,5 @@
+CREATE VIEW MantenedorasComMuitosTecnicos AS
+SELECT no_mantenedora, SUM(qt_tec_total) AS total_tecnicos
+FROM banco_de_dados_institucional
+GROUP BY no_mantenedora
+HAVING SUM(qt_tec_total) > 1000;

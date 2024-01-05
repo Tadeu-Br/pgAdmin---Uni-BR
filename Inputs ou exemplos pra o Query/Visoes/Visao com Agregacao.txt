@@ -1,0 +1,10 @@
+CREATE VIEW TecnicosPorFaixaEtaria AS
+SELECT 
+    CASE 
+        WHEN idade_tecnico <= 30 THEN '0-30'
+        WHEN idade_tecnico > 30 AND idade_tecnico <= 40 THEN '31-40'
+        ELSE '41+'
+    END AS faixa_etaria,
+    COUNT(*) AS total_tecnicos
+FROM banco_de_dados_institucional
+GROUP BY faixa_etaria;

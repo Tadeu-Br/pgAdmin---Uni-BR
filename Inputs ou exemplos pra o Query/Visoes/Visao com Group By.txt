@@ -1,0 +1,4 @@
+CREATE VIEW TotalTecnicosPorCategoria AS
+SELECT tp_organizacao_academica, SUM(qt_tec_total) AS total_tecnicos
+FROM banco_de_dados_institucional
+GROUP BY tp_organizacao_academica;

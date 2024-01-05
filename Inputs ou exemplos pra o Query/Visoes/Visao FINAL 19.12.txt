@@ -1,0 +1,11 @@
+SELECT * FROM Capitais
+SELECT * FROM PeriodicosOrdenadosLivro
+SELECT * FROM MunicipioUF
+SELECT * FROM OrgAcademicaOrdenada
+SELECT * FROM PeriodicosMantenedora (RETORNA UNIVERSIDADE QUE FEZ)
+SELECT * FROM RelacaoMesoMicro
+SELECT * FROM RelacaoMicroOrgAcademica
+SELECT * FROM RelacaoMantedoraMesorregiao
+SELECT * FROM RelacaoMantedoraMunicipio
+SELECT * FROM MunicipioOrgAcademica (unis fora de capitais)
+SELECT * FROM VisaoRegiao

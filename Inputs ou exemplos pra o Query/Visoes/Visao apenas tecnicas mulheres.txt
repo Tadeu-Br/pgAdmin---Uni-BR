@@ -1,0 +1,6 @@
+CREATE VIEW InfoInstituicaoETecnicos AS
+SELECT i.no_ies, i.no_municipio_ies, SUM(t.qt_tec_total) AS total_tecnicos
+FROM banco_de_dados_institucional i
+JOIN banco_de_dados_institucional t ON i.co_ies = t.co_ies
+GROUP BY i.no_ies, i.no_municipio_ies
+ORDER BY total_tecnicos DESC;

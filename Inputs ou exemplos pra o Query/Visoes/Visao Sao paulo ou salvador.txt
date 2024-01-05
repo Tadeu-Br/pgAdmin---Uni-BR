@@ -1,0 +1,8 @@
+CREATE VIEW InstituicoesSPeSalvador AS
+SELECT no_ies, no_municipio_ies, no_uf_ies
+FROM banco_de_dados_institucional
+WHERE no_uf_ies = 'SP'
+UNION
+SELECT no_ies, no_municipio_ies, no_uf_ies
+FROM banco_de_dados_institucional
+WHERE no_uf_ies = 'BA';

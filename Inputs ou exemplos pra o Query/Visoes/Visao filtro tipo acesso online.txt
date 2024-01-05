@@ -1,0 +1,8 @@
+CREATE VIEW AcessoOnline AS
+SELECT 
+    in_acesso_portal_capes,
+    in_acesso_outras_bases,
+    in_assina_outra_base,
+    COUNT(*) AS total_instituicoes
+FROM banco_de_dados_institucional
+GROUP BY in_acesso_portal_capes, in_acesso_outras_bases, in_assina_outra_base;

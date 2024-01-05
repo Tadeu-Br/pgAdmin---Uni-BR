@@ -1,0 +1,4 @@
+CREATE VIEW InstituicoesCapitais AS
+SELECT *
+FROM banco_de_dados_institucional
+WHERE in_capital_ies = 1;

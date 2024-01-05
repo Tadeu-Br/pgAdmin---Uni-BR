@@ -1,0 +1,5 @@
+CREATE VIEW InstituicoesPorTecnicos AS
+SELECT no_ies, SUM(qt_tec_total) AS total_tecnicos
+FROM banco_de_dados_institucional
+GROUP BY no_ies
+ORDER BY total_tecnicos DESC;

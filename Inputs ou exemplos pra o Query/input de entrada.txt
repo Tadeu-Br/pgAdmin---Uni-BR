@@ -1,0 +1,23 @@
+INSERT INTO Banco_de_dados_institucional (
+    NU_ANO_CENSO, NO_REGIAO_IES, CO_REGIAO_IES, NO_UF_IES, SG_UF_IES, CO_UF_IES,
+    NO_MUNICIPIO_IES, CO_MUNICIPIO_IES, IN_CAPITAL_IES, NO_MESORREGIAO_IES,
+    CO_MESORREGIAO_IES, NO_MICRORREGIAO_IES, CO_MICRORREGIAO_IES,
+    TP_ORGANIZACAO_ACADEMICA, TP_CATEGORIA_ADMINISTRATIVA, NO_MANTENEDORA,
+    CO_MANTENEDORA, CO_IES, NO_IES, SG_IES, DS_ENDERECO_IES,
+    DS_NUMERO_ENDERECO_IES, DS_COMPLEMENTO_ENDERECO_IES, NO_BAIRRO_IES, NU_CEP_IES,
+    QT_TEC_TOTAL
+) VALUES 
+    -- Row 1
+    (2023, 'Sudeste', 3, 'São Paulo', 'SP', 35, 'São Paulo', 3550308, 1, 'Metropolitana de São Paulo',
+    3515, 'São Paulo', 3550308, 1, 1, 'University A', 12345, 123, 'Univ A', 'UA', '123 Main St',
+    'Building 1', 'Floor 2', 'Downtown', 12345678, 500),
+
+    -- Row 2
+    (2023, 'Northeast', 2, 'Bahia', 'BA', 29, 'Salvador', 2927408, 1, 'Metropolitan Region of Salvador',
+    2927, 'Salvador', 2927408, 1, 2, 'University B', 54321, 321, 'Univ B', 'UB', '456 Elm St',
+    'Suite 5', 'Tower A', 'Uptown', 87654321, 400),
+
+    -- Row 3
+    (2023, 'South', 4, 'Rio Grande do Sul', 'RS', 43, 'Porto Alegre', 4314902, 1, 'Metropolitan Region of Porto Alegre',
+    4314, 'Porto Alegre', 4314902, 1, 1, 'University C', 98765, 567, 'Univ C', 'UC', '789 Oak St',
+    'Apt 10', 'Block C', 'Suburbia', 13579024, 600);
